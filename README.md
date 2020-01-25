@@ -5,7 +5,7 @@
 ## Results 
 
 <p align="center">
-  <img src=/header1.png>
+  <img src=/Pictures/header1.png>
 </p>
 
 The optimal solution is to invest 31.14% in VAB, 18.63% in XHY, and 50.22% in CSD, given that a minimum yield of 4% and a minimum duration of 4.5 years are added as constraints.
@@ -15,3 +15,19 @@ The optimal solution is to invest 31.14% in VAB, 18.63% in XHY, and 50.22% in CS
 
 The program minimizes the following objective function :
 
+![Showcase1](/Pictures/ObjFunction.png)
+
+Where 
+- T : Array of days
+- I : Array of ETFs
+- Rti : Daily price variation at t 
+- pi : Proportion of index i in portfolio
+- Mi : Mean of portfolio price variation (wrt pi)
+- N : Number of days
+
+with constraints : </br>
+![Showcase2](/Pictures/Cons1.png)</br>
+![Showcase3](/Pictures/Cons2.png)
+
+Where 
+- LR : Duration and Yield
