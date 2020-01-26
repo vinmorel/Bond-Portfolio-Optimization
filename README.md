@@ -38,4 +38,4 @@ ILOG CPLEX Optimization Studio was used to model and solve the problem.
 You can use the files in this repo as a template for your own portfolio. You have to adjust the information in the data file, where prices reflect the daily absolute change in price for a given period. You may also need to change the variables  depending on the ammount of assets you want in your portfolio and their associated names. 
 
 ## Acknowledgments
-Special thanks to Sylvain Perron, PhD. from HEC Montréal for presenting this technique to his students. 
+Special thanks to Sylvain Perron, PhD. from HEC Montréal. 
