@@ -27,9 +27,9 @@
  dvar float+ X[Tickers];
  
  // variable dexpr (moyenne de la valeur du portfolio pour la période étudiée)
- dexpr float Mean1 = sum(j in J) ((Prices["VAB"][j]*X["VAB"]))/(Jours);
- dexpr float Mean2 = sum(j in J) ((Prices["XHY"][j]*X["XHY"]))/(Jours);
- dexpr float Mean3 = sum(j in J) ((Prices["CSD"][j]*X["CSD"]))/(Jours);
+ dexpr float Mean1 = sum(j in J) (abs(Prices["VAB"][j])*X["VAB"])/(Jours);
+ dexpr float Mean2 = sum(j in J) (abs(Prices["XHY"][j])*X["XHY"])/(Jours);
+ dexpr float Mean3 = sum(j in J) (abs(Prices["CSD"][j])*X["CSD"])/(Jours);
   
   
  // fonction objectif MAD (minimizer la somme de la difference absolue entre la valeur du portfolio au jour j et la moyenne du portfolio de facon a reduir la volatilite de la valeur)
